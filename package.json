@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": " npx babel-node ./bin/www.mjs"
+    "start": "babel-node ./bin/www.mjs"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^2.2.0",
@@ -21,6 +21,7 @@
     "@babel/core": "^7.10.5",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
+    "babel-core": "^7.0.0-bridge.0",
     "nodemon": "^2.0.4"
   }
 }

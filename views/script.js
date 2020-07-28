@@ -11,7 +11,11 @@ $(function () {
     const socket = io();
 
     socket.on('conectado', (counter) => {
-        $img.style.display='none';
-        $events.appendChild(newItem(`Conectado com ${counter}`));
+        $img.style.display = 'none';
+        if (counter == "sucesso") {
+            $events.appendChild(newItem(`Conectado com ${counter}`));
+        } else {
+            $events.appendChild(newItem(`Erro ao sincronizar o celular`));
+        }
     });
 });
